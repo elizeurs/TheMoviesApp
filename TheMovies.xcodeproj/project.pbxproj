@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,12 @@
 		75CEB74D26235CAB00684AA0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEB74C26235CAB00684AA0 /* Movie.swift */; };
 		75CEB7502623608900684AA0 /* Cast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEB74F2623608900684AA0 /* Cast.swift */; };
 		75CEB7532623619500684AA0 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEB7522623619500684AA0 /* Review.swift */; };
+		75CEB7572623734400684AA0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 75CEB7562623734400684AA0 /* Alamofire */; };
+		75CEB75A262374D300684AA0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEB759262374D300684AA0 /* NetworkManager.swift */; };
+		75CEB75D262376FB00684AA0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEB75C262376FB00684AA0 /* API.swift */; };
+		75CEB760262378D300684AA0 /* MovieURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEB75F262378D300684AA0 /* MovieURL.swift */; };
+		75CEB76326237A4300684AA0 /* MovieDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEB76226237A4300684AA0 /* MovieDownloadManager.swift */; };
+		75CEB76626238A6200684AA0 /* MovieReviewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEB76526238A6200684AA0 /* MovieReviewsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,11 @@
 		75CEB74C26235CAB00684AA0 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		75CEB74F2623608900684AA0 /* Cast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cast.swift; sourceTree = "<group>"; };
 		75CEB7522623619500684AA0 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		75CEB759262374D300684AA0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		75CEB75C262376FB00684AA0 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		75CEB75F262378D300684AA0 /* MovieURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieURL.swift; sourceTree = "<group>"; };
+		75CEB76226237A4300684AA0 /* MovieDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDownloadManager.swift; sourceTree = "<group>"; };
+		75CEB76526238A6200684AA0 /* MovieReviewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReviewsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CEB7572623734400684AA0 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +130,11 @@
 		754C84A02622610A00B3D3EE /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				75CEB759262374D300684AA0 /* NetworkManager.swift */,
+				75CEB75C262376FB00684AA0 /* API.swift */,
+				75CEB75F262378D300684AA0 /* MovieURL.swift */,
+				75CEB76226237A4300684AA0 /* MovieDownloadManager.swift */,
+				75CEB76526238A6200684AA0 /* MovieReviewsManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -138,6 +155,9 @@
 			dependencies = (
 			);
 			name = TheMovies;
+			packageProductDependencies = (
+				75CEB7562623734400684AA0 /* Alamofire */,
+			);
 			productName = TheMovies;
 			productReference = 754C848A26225F4900B3D3EE /* TheMovies.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 754C848126225F4900B3D3EE;
+			packageReferences = (
+				75CEB7552623734400684AA0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 754C848B26225F4900B3D3EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -191,12 +214,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CEB75D262376FB00684AA0 /* API.swift in Sources */,
 				75CEB7502623608900684AA0 /* Cast.swift in Sources */,
 				75CEB74D26235CAB00684AA0 /* Movie.swift in Sources */,
+				75CEB75A262374D300684AA0 /* NetworkManager.swift in Sources */,
 				75CEB7532623619500684AA0 /* Review.swift in Sources */,
+				75CEB76326237A4300684AA0 /* MovieDownloadManager.swift in Sources */,
 				754C84A9262276CA00B3D3EE /* MoviesView.swift in Sources */,
 				754C84A3262262AE00B3D3EE /* HomeTabView.swift in Sources */,
+				75CEB76626238A6200684AA0 /* MovieReviewsManager.swift in Sources */,
 				754C84A626226DE400B3D3EE /* SettingsView.swift in Sources */,
+				75CEB760262378D300684AA0 /* MovieURL.swift in Sources */,
 				754C849026225F4900B3D3EE /* ContentView.swift in Sources */,
 				754C848E26225F4900B3D3EE /* TheMoviesApp.swift in Sources */,
 				754C84AC262276D900B3D3EE /* DiscoverView.swift in Sources */,
@@ -388,6 +416,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75CEB7552623734400684AA0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75CEB7562623734400684AA0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75CEB7552623734400684AA0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 754C848226225F4900B3D3EE /* Project object */;
 }
