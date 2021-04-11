@@ -23,7 +23,8 @@ struct ContentView: View {
         settingsButton
       })
       .sheet(isPresented: $showSettings, content: {
-        Text("Settings View")
+//        Text("Settings View")
+        SettingsView(isPresented: $showSettings)
       })
     }
   }
