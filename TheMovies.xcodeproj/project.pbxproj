@@ -13,6 +13,8 @@
 		754C849526225F4A00B3D3EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754C849426225F4A00B3D3EE /* Preview Assets.xcassets */; };
 		754C84A3262262AE00B3D3EE /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C84A2262262AE00B3D3EE /* HomeTabView.swift */; };
 		754C84A626226DE400B3D3EE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C84A526226DE400B3D3EE /* SettingsView.swift */; };
+		754C84A9262276CA00B3D3EE /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C84A8262276CA00B3D3EE /* MoviesView.swift */; };
+		754C84AC262276D900B3D3EE /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C84AB262276D900B3D3EE /* DiscoverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		754C849626225F4A00B3D3EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		754C84A2262262AE00B3D3EE /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		754C84A526226DE400B3D3EE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		754C84A8262276CA00B3D3EE /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		754C84AB262276D900B3D3EE /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 			children = (
 				754C84A2262262AE00B3D3EE /* HomeTabView.swift */,
 				754C84A526226DE400B3D3EE /* SettingsView.swift */,
+				754C84A8262276CA00B3D3EE /* MoviesView.swift */,
+				754C84AB262276D900B3D3EE /* DiscoverView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,10 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754C84A9262276CA00B3D3EE /* MoviesView.swift in Sources */,
 				754C84A3262262AE00B3D3EE /* HomeTabView.swift in Sources */,
 				754C84A626226DE400B3D3EE /* SettingsView.swift in Sources */,
 				754C849026225F4900B3D3EE /* ContentView.swift in Sources */,
 				754C848E26225F4900B3D3EE /* TheMoviesApp.swift in Sources */,
+				754C84AC262276D900B3D3EE /* DiscoverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
